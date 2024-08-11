@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.mainframe {
+
+  height: auto;
+  background-image: url("images/3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.mainframe .main {
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 50px;
+  padding-top: 200px;
+  margin-right: 50px;
+  margin-left: 250px;
+  min-height: 100vh;
+}
+nav {
+  height: 50px;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+}
+.backward {
+  display: flex;
+  justify-content: flex-end;
+}
+.backward .title {
+  display: flex;
+  align-items: center;
+  padding-right: 12px;
+}
+.forward {
+  display: flex;
+}
+.menu-icon {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-icon .menu{
+    width: 80%;
+}
+
+.profile {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile img{
+    width: 80%;
+    border-radius: 50%;
+}
+
+.sidebar {
+  position: fixed;
+  border-radius: 0 14px 14px 0;
+  top: 50px;
+  background-color:rgba(153, 153, 153, 0.541);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  width: 200px;
+  left:-200px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  opacity: 0;
+  transition: left  0.5s ease-in-out,opacity 0.5s ease-in-out;
+}
+.side-open{
+    left: 0;
+    opacity: 1;
+}
+.side-con {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 75px;
+  font-size: larger;
+
+  border-bottom: 2px solid black;
+}
+.stuff {
+  margin: 20px 0;
+  max-width: 800px;
+}
+.content,
+.title {
+  text-align: end;
+}
+.content {
+  margin: 0;
+  background-color: rgba(153, 153, 153, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border-radius: 14px;
+  padding: 15px;
+  
+}
+.stuff .title {
+  font-size: xx-large;
+}
+
+.title{
+    mix-blend-mode: exclusion;
+    color: white;
+    font-size: 3em;
+}

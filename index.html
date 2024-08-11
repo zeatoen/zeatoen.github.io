@@ -3,22 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
     <title>zeatoen</title>
   </head>
   <body>
     <div class="mainframe">
-      <nav></nav>
+      <nav>
+        <div class="forward">
+          <div class="menu-icon"><img onclick="togglenav()" src="images/menu.png" alt="" class="menu"></div>
+
+        </div>
+        <div class="backward">
+          <div class="title"></div>
+          <div class="profile"><img src="images/Zeatoen.png" alt=""></div>
+        </div>
+      </nav>
       <div class="sidebar">
         <div class="side-con">apple</div>
         <div class="side-con">bat</div>
         <div class="side-con">cat</div>
         <div class="side-con">denmark</div>
       </div>
+
       <div class="main">
-        <div class="stuff">
+        <div class="stuff About">
           <div class="title">About me</div>
           <div class="content">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus repellendus eveniet ipsam debitis minus at dolore eligendi ea, vitae necessitatibus dignissimos iste quis delectus molestiae. Non aperiam numquam perferendis ipsam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis expedita labore repellendus. Cupiditate, in totam? Eveniet, aliquam culpa dolor provident placeat, sapiente maiores minus dolorem optio distinctio similique vitae possimus.</p>  
           </div>
         </div>
         <div class="stuff">
@@ -36,4 +47,10 @@
       </div>
     </div>
   </body>
+  <script>
+    function togglenav() {
+      
+      document.querySelector(".sidebar").classList.toggle('side-open')
+    }
+  </script>
 </html>
